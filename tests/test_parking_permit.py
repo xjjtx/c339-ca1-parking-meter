@@ -14,7 +14,6 @@ from src.parking_permit import is_permit_valid
 )
 def test_is_permit_valid_returns_true(permit_active, parked_minutes):
     result = is_permit_valid(permit_active, parked_minutes)
-    # We use 'is True' to strictly check for a boolean, because 1 is not allowed!
     assert result is True
 
 # Test when the permit should be INVALID (False)
