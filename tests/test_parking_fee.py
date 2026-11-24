@@ -42,5 +42,3 @@ def test_calculate_parking_fee_value_error(invalid_minutes):
 def test_calculate_parking_fee_type_error(invalid_type):
     with pytest.raises(TypeError):
         calculate_parking_fee(invalid_type)
-
-# test test
